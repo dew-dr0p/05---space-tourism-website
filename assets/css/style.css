@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .router-link-active, .router-link-exact-active {
+        border-bottom-width: 3px;
+        border-color: white;
+    }
+}

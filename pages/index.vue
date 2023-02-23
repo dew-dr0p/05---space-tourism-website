@@ -1,14 +1,21 @@
 <template>
-    <div class="m-20 flex flex-row">
-        <img src="~/assets/Group 2.svg" alt="" class="">
-        <img src="~/assets/Rectangle.svg" alt="">
-        <div class="absolute w-[30rem] h-[5rem] right-0 bg-[rgba(255,255,255)] bg-opacity-[0.04] backdrop-filter blur-sm">
+    <div class="grid grid-cols-2">
+        <div>
+            <h5>So you want to travel to space</h5>
+            <h1>Space</h1>
+            <p>
+                Let’s face it; if you want to go to space, you might as well genuinely go to 
+                outer space and not hover kind of on the edge of it. Well sit back, and relax 
+                because we’ll give you a truly out of this world experience!
+            </p>
         </div>
-        <div class="text-white text-sm p-6" style="letter-spacing: 2.7px;">
-            <NuxtLink to="/">00 Home</NuxtLink>
-            <NuxtLink to="">01 Destination</NuxtLink>
-            <NuxtLink to="">02 Crew</NuxtLink>
-            <NuxtLink to="">03 Technology</NuxtLink>
-        </div>
+        <HomeButton />
     </div>
 </template>
+
+<style scoped>
+.router-link-active, .router-link-exact-active {
+        border-bottom-width: 3px;
+        border-color: white;
+    }
+</style>
