@@ -7,7 +7,7 @@ definePageMeta({
 <template>
     <div class="grid grid-cols-2 items-end">
         <div class="text-white my-auto ml-20">
-            <h5 class="uppercase text-sm" style="letter-spacing: 2.7px;"><span class=" opacity-25">03</span> Space launch 101</h5>
+            <h5 class="text-3xl text-white uppercase -ml-10 mb-16" style="letter-spacing: 4.75px;"><span class="opacity-25">03</span> Space launch 101</h5>
             <div class="flex flex-row">
                 <TechnologyNavBar class="mr-16"/>
                 <div>
@@ -22,7 +22,7 @@ definePageMeta({
             </div>
         </div>
         <div class="mx-auto mt-3 self-end">
-            <img src="~/assets/crew/image-douglas-hurley.png" alt="" class="w-96">
+            <img src="../../assets/technology/image-launch-vehicle-portrait.jpg" alt="" class="w-96">
         </div>
     </div>
 </template>

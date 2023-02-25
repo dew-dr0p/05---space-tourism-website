@@ -5,12 +5,12 @@
                 1
             </button>
         </NuxtLink>
-        <NuxtLink to="/">
+        <NuxtLink to="/Technology/Spaceport">
             <button class="rounded-[50%] w-12 h-12 text-white border border-white border-opacity-25 hover:border-opacity-100 mb-5">
                 2
             </button>
         </NuxtLink>
-        <NuxtLink to="/">
+        <NuxtLink to="/Technology/Capsule">
             <button class="rounded-[50%] w-12 h-12 text-white border border-white border-opacity-25 hover:border-opacity-100 mb-5">
                 3
             </button>
