@@ -1,0 +1,27 @@
+<template>
+    <div class="flex flex-col">
+        <NuxtLink to="/Technlogy">
+            <button class="rounded-[50%] w-12 h-12 text-white border border-white border-opacity-25 hover:border-opacity-100 mb-5">
+                1
+            </button>
+        </NuxtLink>
+        <NuxtLink to="/">
+            <button class="rounded-[50%] w-12 h-12 text-white border border-white border-opacity-25 hover:border-opacity-100 mb-5">
+                2
+            </button>
+        </NuxtLink>
+        <NuxtLink to="/">
+            <button class="rounded-[50%] w-12 h-12 text-white border border-white border-opacity-25 hover:border-opacity-100 mb-5">
+                3
+            </button>
+        </NuxtLink>
+    </div>
+</template>
+
+<style scoped>
+.router-link-active, .router-link-exact-active button {
+        color: #0B0D17;
+        background: white;
+        border: none;
+    }
+</style>
