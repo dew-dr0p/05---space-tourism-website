@@ -21,7 +21,7 @@ definePageMeta({
                 </div>
             </div>
         </div>
-        <div class="mx-auto mt-3 self-end">
+        <div class=" mx-auto mr-0 mt-3 self-end">
             <img src="../../assets/technology/image-launch-vehicle-portrait.jpg" alt="" class="w-96">
         </div>
     </div>
