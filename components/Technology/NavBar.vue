@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col">
-        <NuxtLink to="/Technlogy">
+        <NuxtLink to="/Technology">
             <button class="rounded-[50%] w-12 h-12 text-white border border-white border-opacity-25 hover:border-opacity-100 mb-5">
                 1
             </button>
@@ -19,9 +19,9 @@
 </template>
 
 <style scoped>
-.router-link-active, .router-link-exact-active button {
+.router-link-active button, .router-link-exact-active button {
         color: #0B0D17;
-        background: white;
+        background-color: white;
         border: none;
     }
 </style>
