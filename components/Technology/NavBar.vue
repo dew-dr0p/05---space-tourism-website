@@ -19,9 +19,11 @@
 </template>
 
 <style scoped>
+.router-link-active button, .router-link-exact-active {
+        border: none;
+    }
 .router-link-active button, .router-link-exact-active button {
         color: #0B0D17;
         background-color: white;
-        border: none;
     }
 </style>
