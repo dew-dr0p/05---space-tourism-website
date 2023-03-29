@@ -1,40 +1,60 @@
 <template>
-    <div class="uppercase text-sm" style="letter-spacing: 2.7px;">
-            <NuxtLink 
-                to="/Destination" 
-                class=" py-4 mr-12 
+    <div>
+            <button 
+                class=" py-4 mr-12 uppercase text-sm
                         hover:border-b-[3px] 
                         hover:border-white 
                         hover:border-opacity-50"
+                :class="destination === 'moon' ? 'border-b-[3px] border-white' : ''"
+                style="letter-spacing: 2.7px;"
+                @click="emit('navigate', 'moon')"
             >
                 Moon
-            </NuxtLink>
-            <NuxtLink 
-                to="/Destination/Mars" 
-                class=" py-4 mr-10 
+            </button>
+            <button 
+                class=" py-4 mr-10 uppercase text-sm
                         hover:border-b-[3px] 
                         hover:border-white 
                         hover:border-opacity-50"
+                :class="destination === 'mars' ? 'border-b-[3px] border-white' : ''"
+                style="letter-spacing: 2.7px;"
+                @click="change('mars')"
             >
                 Mars
-            </NuxtLink>
-            <NuxtLink 
-                to="/Destination/Europa" 
-                class=" py-4 mr-10 
+            </button>
+            <button 
+                class=" py-4 mr-10 uppercase text-sm
                         hover:border-b-[3px] 
                         hover:border-white 
                         hover:border-opacity-50"
+                :class="destination === 'europa' ? 'border-b-[3px] border-white' : ''"
+                style="letter-spacing: 2.7px;"
+                @click="$emit('navigate', 'europa')"
             >
                 Europa
-            </NuxtLink>
-            <NuxtLink 
-                to="/Destination/Titan" 
-                class=" py-4 mr-10 
+            </button>
+            <button 
+                class=" py-4 mr-10 uppercase text-sm
                         hover:border-b-[3px] 
                         hover:border-white 
                         hover:border-opacity-50"
+                :class="destination === 'titan' ? 'border-b-[3px] border-white' : ''"
+                style="letter-spacing: 2.7px;"
+                @click="emit('navigate', 'titan')"
             >
                 Titan
-            </NuxtLink>
+            </button>
         </div>
 </template>
+
+<script setup>
+const props = defineProps({
+    destination: String
+})
+
+const emit = defineEmits({'navigate': String})
+
+function change(e) {
+    emit('navigate', e)
+}
+</script>

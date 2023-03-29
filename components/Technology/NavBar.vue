@@ -1,29 +1,19 @@
 <template>
     <div class="flex flex-col">
-        <NuxtLink to="/Technology">
-            <button class="rounded-[50%] w-12 h-12 text-white border border-white border-opacity-25 hover:border-opacity-100 mb-5">
-                1
-            </button>
-        </NuxtLink>
-        <NuxtLink to="/Technology/Spaceport">
-            <button class="rounded-[50%] w-12 h-12 text-white border border-white border-opacity-25 hover:border-opacity-100 mb-5">
-                2
-            </button>
-        </NuxtLink>
-        <NuxtLink to="/Technology/Capsule">
-            <button class="rounded-[50%] w-12 h-12 text-white border border-white border-opacity-25 hover:border-opacity-100 mb-5">
-                3
-            </button>
-        </NuxtLink>
+            <button 
+                v-for="n in 3" 
+                class="rounded-[50%] w-20 h-20 font-[Bellefair] 
+                border border-white text-3xl
+                border-opacity-25 hover:border-opacity-100 mb-5"
+                :class="number === n ? 'text-blue bg-white border-none' : 'text-white bg-none'"
+                @click="$emit('navigate', n)"
+            >{{ n }}</button>
     </div>
 </template>
 
-<style scoped>
-.router-link-active button, .router-link-exact-active {
-        border: none;
-    }
-.router-link-active button, .router-link-exact-active button {
-        color: #0B0D17;
-        background-color: white;
-    }
-</style>
+<script setup>
+const props = defineProps({
+    number: Number
+})
+const emit = defineEmits(['navigate'])
+</script>

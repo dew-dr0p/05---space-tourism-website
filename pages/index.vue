@@ -1,7 +1,7 @@
 <template>
-    <div class="grid grid-cols-2 items-end">
-        <div class="text-lightBlue m-20 mb-5 mr-5">
-            <h5 class="text-3xl uppercase" style="letter-spacing: 4.75px;">So you want to travel to space</h5>
+    <div class="grid grid-cols-2 mb-32">
+        <div class="text-lightBlue m-auto max-w-md">
+            <h5 class="text-3xl uppercase" style="letter-spacing: 4.75px;">So you want to travel to</h5>
             <h1 class="font-[Bellefair] text-white text-[10rem] uppercase">Space</h1>
             <p>
                 Let’s face it; if you want to go to space, you might as well genuinely go to 
@@ -9,7 +9,7 @@
                 because we’ll give you a truly out of this world experience!
             </p>
         </div>
-        <HomeButton class="m-36 ml-52" />
+        <HomeButton class="m-auto" />
     </div>
 </template>
 
